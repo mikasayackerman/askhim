@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=320' />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <title>TARA SHOT PUNO</title>
+<body>
+    <div class="ost-multi-header">
+    <div class="w3-container w3-center w3-animate-zoom">
+    <div class="wrapper">
+        <div class="container">
+            <p id="question"><span>Tara shot tayo after class mo or if my time ka? </br>
+                 HAHAHAHA jk </br>Tara unwind alam kong dami mo ng iniisip,</br> deserve mo mag rest.
+                </span></p>
+            <button class="btn" id="TARA"><b>TARA</b></button>
+            <button class="btn" id="YOKO"><b>YOKO</b></button>
+        </div>
+    </div> 
+</body>
+<script>
+    const yokoBtn = document.getElementById('YOKO');
+    const taraBtn = document.getElementById('TARA');
+    const ques = document.getElementById('question');
+    let btn = document.getElementById('btn');
+        let position;
+        yokoBtn.addEventListener('mouseover',() =>{
+        let rand = Math.floor(Math.random() * (500 - 100) + 1);
+        let rand2 = Math.floor(Math.random() * (-300 - 100) + 1);
+        yokoBtn.style.transform = "translate("+rand+"px,"+rand2+"px)";
+        });
+    taraBtn.addEventListener("click",()=>{
+        ques.innerHTML = "TARA BOSS HAHAHAHA!!!! </br> PM mo lang ako whenever you want to unwind hihihi"
+    })
+</script>
+
+</html>
